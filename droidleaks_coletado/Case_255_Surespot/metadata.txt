@@ -1,0 +1,3 @@
+App: Surespot
+Resource: java.io.InputStream
+Buggy File: EncryptionController.java

@@ -1,0 +1,3 @@
+App: Bitcoin-wallet
+Resource: java.util.Formatter
+Buggy File: ErrorReporter.java

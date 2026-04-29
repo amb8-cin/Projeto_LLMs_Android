@@ -1,0 +1,10 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -233,6 +233,7 @@
+ 				try {
+ 					if (!bank.isDisabled()) {
+ 						bank.update();
++						bank.closeConnection();
+ 						bank.save();
+ 					}
+ 					else {

@@ -1,0 +1,3 @@
+App: ChatSecure
+Resource: java.io.FilterInputStream
+Buggy File: SM.java

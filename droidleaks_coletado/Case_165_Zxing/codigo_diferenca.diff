@@ -1,0 +1,10 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -294,6 +294,7 @@
+         } catch (IOException e) {
+           Log.e(TAG, e.toString());
+         }
++        client.close();
+       }
+       return cookie;
+     }

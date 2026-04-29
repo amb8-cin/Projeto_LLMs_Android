@@ -1,0 +1,10 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -645,6 +645,7 @@
+                     try {
+                         eoos.writeShort(tlv.type);
+                         eoos.writeTlvData(tlv.value);
++                        eoos.close();
+                     } catch (IOException e) {
+                         throw new OtrException(e);
+                     }

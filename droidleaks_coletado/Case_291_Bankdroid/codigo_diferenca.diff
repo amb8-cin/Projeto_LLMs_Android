@@ -1,0 +1,10 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -56,6 +56,7 @@
+ 			try {
+ 				bank.update();
+ 				bank.updateAllTransactions();
++				bank.closeConnection();
+ 				bank.save();
+ 				i++;
+ 			} 

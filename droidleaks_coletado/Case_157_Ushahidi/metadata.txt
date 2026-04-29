@@ -1,0 +1,3 @@
+App: Ushahidi
+Resource: android.location.LocationListener
+Buggy File: CheckinMap.java

@@ -1,0 +1,9 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -186,5 +186,6 @@
+         final Image image2 = Image.CREATOR.createFromParcel(parcel);
+ 
+         assertThat(image1).isEqualTo(image2);
++        parcel.recycle();
+     }
+ }

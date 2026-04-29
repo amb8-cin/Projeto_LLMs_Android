@@ -1,0 +1,3 @@
+App: Quran for Android
+Resource: java.io.BufferedOutputStream
+Buggy File: QuranDataService.java

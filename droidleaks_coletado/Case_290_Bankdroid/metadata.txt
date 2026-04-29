@@ -1,0 +1,3 @@
+App: Bankdroid
+Resource: org.apache.http.impl.client.DefaultHttpClient
+Buggy File: BankdroidWidgetProvider.java

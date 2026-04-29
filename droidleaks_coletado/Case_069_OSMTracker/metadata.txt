@@ -1,0 +1,3 @@
+App: OSMTracker
+Resource: android.database.Cursor
+Buggy File: TrackManager.java

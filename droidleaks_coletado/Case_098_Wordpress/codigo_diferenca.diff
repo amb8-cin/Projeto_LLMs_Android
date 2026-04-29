@@ -1,0 +1,20 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -134,7 +134,7 @@
+     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+         mCallback.onCursorLoaded(getUri(), data);
+         if (mAdapter != null)
+-            mAdapter.swapCursor(data);
++            mAdapter.changeCursor(data);
+         configureEmptyLabel();
+         if (isTablet()) {
+             reloadLinearLayout();
+@@ -144,7 +144,7 @@
+     @Override
+     public void onLoaderReset(Loader<Cursor> loader) {
+         if (mAdapter != null)
+-            mAdapter.swapCursor(null);
++            mAdapter.changeCursor(null);
+         configureEmptyLabel();
+         if (isTablet()) {
+             reloadLinearLayout();

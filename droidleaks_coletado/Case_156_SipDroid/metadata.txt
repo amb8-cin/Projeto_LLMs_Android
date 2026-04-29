@@ -1,0 +1,3 @@
+App: SipDroid
+Resource: android.hardware.Camera
+Buggy File: VideoCamera.java

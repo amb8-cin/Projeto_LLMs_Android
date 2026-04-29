@@ -1,0 +1,3 @@
+App: AnySoftKeyboard
+Resource: android.database.Cursor
+Buggy File: ContactsDictionary.java

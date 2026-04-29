@@ -1,0 +1,3 @@
+App: Bankdroid
+Resource: android.database.Cursor
+Buggy File: BankFactory.java

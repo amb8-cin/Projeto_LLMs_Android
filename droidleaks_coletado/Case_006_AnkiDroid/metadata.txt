@@ -1,0 +1,3 @@
+App: AnkiDroid
+Resource: android.database.Cursor
+Buggy File: Deck.java

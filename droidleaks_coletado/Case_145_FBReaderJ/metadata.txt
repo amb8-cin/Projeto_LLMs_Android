@@ -1,0 +1,3 @@
+App: FBReaderJ
+Resource: android.database.sqlite.SQLiteDatabase
+Buggy File: LibraryService.java

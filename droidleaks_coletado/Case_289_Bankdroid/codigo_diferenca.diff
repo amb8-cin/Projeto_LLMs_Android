@@ -1,0 +1,10 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -98,6 +98,7 @@
+     					refreshWidgets = true;
+     					bank.updateAllTransactions();
+     				}
++    				bank.closeConnection();
+     				db.updateBank(bank);
+     			} 
+     			catch (BankException e) {

@@ -1,0 +1,11 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -201,6 +201,8 @@
+ 					
+ 				}
+ 			}while(cursor.moveToNext());
++			
++			cursor.close();
+ 		}
+ 		
+ 		ContentValues vals = new ContentValues();

@@ -1,0 +1,3 @@
+App: FBReaderJ
+Resource: java.io.InputStreamReader
+Buggy File: ZLOwnXMLParser.java

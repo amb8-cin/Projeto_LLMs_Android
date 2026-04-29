@@ -1,0 +1,11 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -196,6 +196,8 @@
+             } finally {
+                 c.close();
+             }
++        }else if(c != null) {
++            c.close();
+         }
+ 
+         for(SipProfile acc : accToRemove) {

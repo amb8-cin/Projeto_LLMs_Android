@@ -1,0 +1,25 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -412,10 +412,11 @@
+     }
+ 
+     @Override
+-    public Cursor swapCursor(Cursor newCursor) {
++    public void changeCursor(Cursor newCursor) {
+         if (newCursor == null) {
+             mCursorDataCount = 0;
+-            return super.swapCursor(newCursor);
++            super.changeCursor(newCursor);
++            return;
+         }
+         
+         mCursorDataCount = newCursor.getCount();
+@@ -445,7 +446,7 @@
+         
+         // use a merge cursor to place merge the extra rows at the bottom of the newly swapped cursor
+         MergeCursor mergeCursor = new MergeCursor(new Cursor[] { newCursor, matrixCursor });
+-        return super.swapCursor(mergeCursor);
++        super.changeCursor(mergeCursor);
+     }
+ 
+     /** Return the number of columns in the media grid **/

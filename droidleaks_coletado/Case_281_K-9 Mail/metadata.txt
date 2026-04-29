@@ -1,0 +1,3 @@
+App: K-9 Mail
+Resource: java.util.concurrent.Semaphore
+Buggy File: MessageProvider.java

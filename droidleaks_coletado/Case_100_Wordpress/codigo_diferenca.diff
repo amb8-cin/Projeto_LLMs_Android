@@ -1,0 +1,11 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -193,7 +193,7 @@
+         
+         if (mNoResultText.isShown())
+             mNoResultText.setVisibility(View.GONE);
+-        mAdapter.swapCursor(cursor);
++        mAdapter.changeCursor(cursor);
+     }
+     
+     protected String getBlogId() {

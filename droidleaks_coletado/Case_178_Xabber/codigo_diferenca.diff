@@ -1,0 +1,15 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -370,8 +370,10 @@
+ 	 * Stop fling scrolling.
+ 	 */
+ 	private void stopMovement() {
+-		listView.onTouchEvent(MotionEvent.obtain(SystemClock.uptimeMillis(),
+-				SystemClock.uptimeMillis(), MotionEvent.ACTION_CANCEL, 0, 0, 0));
++		MotionEvent event = MotionEvent.obtain(SystemClock.uptimeMillis(),
++				SystemClock.uptimeMillis(), MotionEvent.ACTION_CANCEL, 0, 0, 0);
++		listView.onTouchEvent(event);
++		event.recycle();
+ 	}
+ 
+ 	public interface OnContactClickListener {

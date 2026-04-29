@@ -1,0 +1,10 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -82,6 +82,7 @@
+       int n = 0;
+       while ((n = fis.read(buffer)) != -1)
+         output.write(buffer, 0, n);            
++      fis.close();
+     } // try
+     catch(IOException e)
+     {

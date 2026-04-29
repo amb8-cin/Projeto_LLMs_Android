@@ -1,0 +1,3 @@
+App: ConnectBot
+Resource: android.os.PowerManager.WakeLock
+Buggy File: ConsoleActivity.java

@@ -1,0 +1,3 @@
+App: CycleStreets
+Resource: java.io.FileInputStream
+Buggy File: ApiCallCache.java

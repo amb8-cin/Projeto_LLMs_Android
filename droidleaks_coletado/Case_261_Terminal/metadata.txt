@@ -1,0 +1,3 @@
+App: Terminal
+Resource: java.io.InputStream
+Buggy File: TermSession.java

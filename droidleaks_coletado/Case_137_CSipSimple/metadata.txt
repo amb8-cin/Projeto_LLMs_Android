@@ -1,0 +1,3 @@
+App: CSipSimple
+Resource: android.database.Cursor
+Buggy File: ContactsUtils5.java

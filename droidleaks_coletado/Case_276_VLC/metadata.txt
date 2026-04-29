@@ -1,0 +1,3 @@
+App: VLC
+Resource: java.io.OutputStreamWriter
+Buggy File: Logcat.java

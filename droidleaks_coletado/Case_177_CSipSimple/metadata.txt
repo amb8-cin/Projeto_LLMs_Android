@@ -1,0 +1,3 @@
+App: CSipSimple
+Resource: android.os.PowerManager.WakeLock
+Buggy File: SipService.java

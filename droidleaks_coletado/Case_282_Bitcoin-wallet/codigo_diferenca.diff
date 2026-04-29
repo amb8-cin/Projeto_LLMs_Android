@@ -1,0 +1,13 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -40,6 +40,10 @@
+     public void onChainDownloadStarted(Peer peer, int blocksLeft) {
+         startDownload(blocksLeft);
+         originalBlocksLeft = blocksLeft;
++        if (blocksLeft == 0) {
++            doneDownload();
++            done.release();
++        }
+     }
+ 
+     @Override

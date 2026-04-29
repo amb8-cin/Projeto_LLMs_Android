@@ -1,0 +1,3 @@
+App: Open-GPSTracker
+Resource: android.os.PowerManager.WakeLock
+Buggy File: GPSLoggerService.java

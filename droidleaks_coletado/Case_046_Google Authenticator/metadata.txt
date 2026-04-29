@@ -1,0 +1,3 @@
+App: Google Authenticator
+Resource: android.database.Cursor
+Buggy File: AccountDb.java

@@ -1,0 +1,3 @@
+App: Xabber
+Resource: android.view.MotionEvent
+Buggy File: ContactListFragment.java

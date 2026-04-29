@@ -1,0 +1,16 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -478,8 +478,11 @@
+             }
+             Transport transport = Transport.getInstance(K9.app, account);
+             transport.close();
+-            transport.open();
+-            transport.close();
++            try {
++                transport.open();
++            } finally {
++                transport.close();
++            }
+         }
+ 
+         private void checkIncoming() throws MessagingException {

@@ -1,0 +1,3 @@
+App: OsmDroid
+Resource: android.location.LocationListener
+Buggy File: SampleMapActivity.java

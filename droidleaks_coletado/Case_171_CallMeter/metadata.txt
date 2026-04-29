@@ -1,0 +1,3 @@
+App: CallMeter
+Resource: android.os.PowerManager.WakeLock
+Buggy File: LogRunnerService.java

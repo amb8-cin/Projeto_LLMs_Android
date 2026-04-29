@@ -1,0 +1,3 @@
+App: K-9 Mail
+Resource: java.net.Socket
+Buggy File: AccountSetupCheckSettings.java

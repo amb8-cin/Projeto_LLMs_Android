@@ -1,0 +1,3 @@
+App: Zxing
+Resource: android.net.http.AndroidHttpClient
+Buggy File: SearchBookContentsActivity.java

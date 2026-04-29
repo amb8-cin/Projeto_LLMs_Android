@@ -1,0 +1,3 @@
+App: Owncloud
+Resource: android.database.Cursor
+Buggy File: FileContentProvider.java

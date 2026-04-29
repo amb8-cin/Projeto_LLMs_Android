@@ -1,0 +1,5 @@
+# Ignorar dados e modelos binarios
+*.pkl
+/models/*.pkl
+/data/**/*.pkl
+*.env

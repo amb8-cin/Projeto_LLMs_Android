@@ -1,0 +1,11 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -323,6 +323,8 @@
+ 
+ 	@Override
+ 	protected void closeAllResources() {
++		if (mOpenHelper != null)
++			mOpenHelper.close();
+ 	}
+ 
+ 	@Override

@@ -1,0 +1,3 @@
+App: Osmand
+Resource: android.database.Cursor
+Buggy File: HillshadeLayer.java

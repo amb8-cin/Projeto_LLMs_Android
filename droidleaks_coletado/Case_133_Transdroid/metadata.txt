@@ -1,0 +1,3 @@
+App: Transdroid
+Resource: android.database.Cursor
+Buggy File: SearchHelper.java

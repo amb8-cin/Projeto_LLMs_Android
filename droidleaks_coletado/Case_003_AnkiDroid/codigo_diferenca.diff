@@ -1,0 +1,14 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -2582,6 +2582,11 @@
+                 }
+                 revYesRate = cur.getDouble(0);
+                 revTime = cur.getDouble(1);
++                
++                if (cur != null && !cur.isClosed()) {
++                    cur.close();
++                }
++                
+                 cur = mCol
+                         .getDb()
+                         .getDatabase()

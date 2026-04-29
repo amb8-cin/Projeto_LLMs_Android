@@ -1,0 +1,13 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -105,8 +105,8 @@
+ 						}
+ 						
+ 					} while(cursor.moveToNext());
+-					cursor.close();
+-				}
++				}
++				cursor.close();
+ 			}
+ 
+ 			private Map<String, SQLiteTileSource> readFiles(final OsmandApplication app, File tilesDir, Map<String, Long> fileModified) {

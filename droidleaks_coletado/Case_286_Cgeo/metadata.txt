@@ -1,0 +1,3 @@
+App: Cgeo
+Resource: java.util.Scanner
+Buggy File: AbstractResourceInstrumentationTestCase.java

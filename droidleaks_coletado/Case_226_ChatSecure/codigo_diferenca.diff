@@ -1,0 +1,18 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -73,6 +73,7 @@
+         oos.writeMysteriousT(t);
+         byte[] b = out.toByteArray();
+         out.close();
++        oos.close();
+         return b;
+     }
+ 
+@@ -83,6 +84,7 @@
+         oos.writeData(b);
+         byte[] otrb = out.toByteArray();
+         out.close();
++        oos.close();
+         return otrb;
+     }
+ 

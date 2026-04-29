@@ -1,0 +1,3 @@
+App: ChatSecure
+Resource: java.io.FilterOutputStream
+Buggy File: SerializationUtils.java

@@ -1,0 +1,16 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -157,9 +157,12 @@
+                     }
+                 }
+                 
+-                cursor.close();
++               
+             }
+         }
++        
++        if (cursor != null)
++            cursor.close();
+         
+         return info;
+     }

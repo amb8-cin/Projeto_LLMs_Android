@@ -1,0 +1,10 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -144,6 +144,7 @@
+ 				Log.d(TAG, "Updating "+bank);
+ 				bank.update();
+ 				bank.updateAllTransactions();
++				bank.closeConnection();
+ 				Log.d(TAG, "Saving "+bank);
+ 				bank.save();
+ 				Log.d(TAG, "Disabled: "+bank.isDisabled());

@@ -1,0 +1,3 @@
+App: ChatSecure
+Resource: android.database.Cursor
+Buggy File: SystemServices.java

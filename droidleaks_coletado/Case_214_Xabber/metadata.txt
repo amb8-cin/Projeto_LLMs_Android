@@ -1,0 +1,3 @@
+App: Xabber
+Resource: java.io.FileOutputStream
+Buggy File: AccountInfoEditorFragment.java

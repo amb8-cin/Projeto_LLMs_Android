@@ -1,0 +1,14 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -163,8 +163,10 @@
+             ByteArrayInputStream in = new ByteArrayInputStream(bytes);
+             OtrInputStream ois = new OtrInputStream(in);
+             int len = ois.readInt();
+-            if (len > 100)
++            if (len > 100) {
++                ois.close();
+                 throw new SMException("Too many ints");
++            }
+             BigInteger[] ints = new BigInteger[len];
+             for (int i = 0; i < len; i++) {
+                 ints[i] = ois.readBigInt();

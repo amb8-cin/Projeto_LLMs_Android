@@ -1,0 +1,10 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -129,6 +129,7 @@
+                 HttpRequest request = readRequest(client);
+                 if (isRunning)
+                     processRequest(request, client);
++                client.close();
+             } catch (SocketTimeoutException e) {
+                 // Do nothing
+             } catch (IOException e) {

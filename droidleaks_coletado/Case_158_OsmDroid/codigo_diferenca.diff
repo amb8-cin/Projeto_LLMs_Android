@@ -1,0 +1,41 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -72,9 +72,6 @@
+ 			this.enableDoGPSRecordingAndContributing();
+ 		else
+ 			this.disableDoGPSRecordingAndContributing(false);
+-
+-		// register location listener
+-		initLocation();
+ 	}
+ 
+ 	private LocationManager getLocationManager() {
+@@ -101,17 +98,23 @@
+ 
+ 	public abstract void onLocationChanged(final Location pLoc);
+ 
+-	/**
+-	 * Called when activity is destroyed. Unregisters LocationListener.
+-	 */
+ 	@Override
+-	protected void onDestroy() {
+-		super.onDestroy();
++	protected void onResume() {
++		// register location listener
++		initLocation();
++
++		super.onPause();
++	}
++
++	@Override
++	protected void onPause() {
+ 		getLocationManager().removeUpdates(mLocationListener);
+ 
+ 		if (this.mDoGPSRecordingAndContributing) {
+ 			OSMUploader.uploadAsync(this.mRouteRecorder.getRecordedGeoPoints());
+ 		}
++
++		super.onResume();
+ 	}
+ 
+ 	// ===========================================================

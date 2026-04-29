@@ -1,0 +1,3 @@
+App: Osmand
+Resource: java.util.logging.FileHandler
+Buggy File: IndexBatchCreator.java

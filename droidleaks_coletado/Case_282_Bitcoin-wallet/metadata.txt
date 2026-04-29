@@ -1,0 +1,3 @@
+App: Bitcoin-wallet
+Resource: java.util.concurrent.Semaphore
+Buggy File: DownloadListener.java

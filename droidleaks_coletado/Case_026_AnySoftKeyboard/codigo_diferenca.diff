@@ -1,0 +1,12 @@
+--- BuggyCode.java (Com Erro)
++++ GroundTruth_Fix.java (Corrigido)
+@@ -136,7 +136,9 @@
+     	
+     	if (newCount == mContactsCount  && newHash == mContactsHash )
+     	{
++    	    cursor.close();
+     	    return;
++    	    
+     	}
+     		if (AnySoftKeyboardConfiguration.DEBUG) Log.d(TAG, "Contacts will be reloaded since count or hash changed. New count "+newCount+" was("+mContactsCount+"), new hash "+newHash+" (was "+mContactsHash+").");
+     		mContactsCount = newCount;

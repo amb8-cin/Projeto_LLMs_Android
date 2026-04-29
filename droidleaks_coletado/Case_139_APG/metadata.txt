@@ -1,0 +1,3 @@
+App: APG
+Resource: android.database.Cursor
+Buggy File: ContactHelper.java
